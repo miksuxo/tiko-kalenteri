@@ -25,12 +25,11 @@ body {
 }
 
 .grid-container {
-  font-size: 18px;
-  border-radius: 15px;
-  padding: 50px 50px;
-  margin: 30px 10px;
-
-  display: flex;
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 50px 50px;
+    margin: 30px 10px;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
