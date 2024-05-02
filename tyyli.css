@@ -1,30 +1,100 @@
-/* Reset some default styles */
+/*Yleiset määritykset body elementin sisällölle sekä teksteille*/
+body {
+  color: #1F3541;
+  background-color: #E4F4F3;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+}
+p {
+  font-size: 18px;
+}
+h1 {
+  font-size: 26px;
+  color: #FB8DA0;
+}
+h2 {
+  font-size: 22px;
+}
+h3{
+  font-size: 22px
+}
 
+/*määritettyjen sisältöjen keskitys*/
+.keskitys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*Kalenterin luukkujen asettelu erusivulla*/
 .grid-container {
-    font-size: 18px;
-    border-radius: 15px;
-    padding: 50px 50px;
-    margin: 30px 10px;
+    padding: 20px 20px;
+    margin: 10px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
+/*etusivun kalenterin painikkeiden määrityksiä*/
 nav a {
-    background: #5b6d55;
+    background: #FB8DA0;
     color: #f2f2f2;
     text-decoration: none;
     display: inline-block;
-    border: 2px solid #403c01;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #1F3541;
     font-size: 18px;
     border-radius: 15px;
-    padding: 50px 50px;
+    width: 150px;
+    height: 70px;
+    padding: 30px;
     margin: 30px 10px;
+    font-size: 22px;
 }
-nav {
-    
+
+/*kalenterin painikkeen värin muutos hiiren alla*/
+nav a:hover {
+  color: #FB8DA0;
+  background-color: #f2f2f2;
 }
+
+/*Takaisin etusivulle painikkeen määritykset*/
+.toimintakehote {
+  background: #FB8DA0;
+  color: #f2f2f2;
+  border: 2px solid #1F3541;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/*Takaisin etusivulle painikkeen värin muutos hiiren alla*/
+.toimintakehote:hover {
+  color: #FB8DA0;
+  background-color: #f2f2f2;
+}
+
+/*alatunniste*/
+footer {
+  background-color: #FB8DA0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
+  color: #f2f2f2;
+
+}
+
+
+/*TÄMÄN TEKSTIN ALAPUOLELLE YKSITTÄISTEN LUUKKUJEN OMIA MÄÄRITYKSIÄ, KUVIEN KOOT YMS.*/
 
 #embed-ded-map-canvas {
   position: relative;
@@ -32,9 +102,7 @@ nav {
 }
 /*Luukku6*/
 #pasinLuukku {
-  /*background-color: #08f9e5; saa vaihtaa*/
-  font-size: 25px;
-  text-shadow: 5px; 5px; 5px;
+
 }
 /*luukku7 positioning*/
 #imageLaguuni {
@@ -42,17 +110,4 @@ position: relative;
 top: 50px;
 }
 
-#luukku7-header {
-  font-size: 25px;
-  text-shadow: 5px 5px 5px;
-}
 
-/*luukku 4*/
-h3{
-  font-size: 25px
-}
-
-/*luukku 4*/
-p{
-  font-size: 20px;
-}
