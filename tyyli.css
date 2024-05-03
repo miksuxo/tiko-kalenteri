@@ -3,8 +3,8 @@ body {
   color: #1F3541;
   background-color: #E4F4F3;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
+
 p {
   font-size: 18px;
 }
@@ -17,6 +17,13 @@ h2 {
 }
 h3{
   font-size: 22px
+}
+
+/*luukku sivujen marginaalit*/
+.luukut{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
 }
 
 /*määritettyjen sisältöjen keskitys*/
@@ -95,6 +102,32 @@ footer {
 
 
 /*TÄMÄN TEKSTIN ALAPUOLELLE YKSITTÄISTEN LUUKKUJEN OMIA MÄÄRITYKSIÄ, KUVIEN KOOT YMS.*/
+
+/*Luukku 3. linkin määritykset*/
+.sipoonkorpi {
+  background: #5EA8A7;
+  color: #f2f2f2;
+  border: 2px solid #1F3541;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/*Luukku 3. linkin värin muutos hiiren alla*/
+.sipoonkorpi:hover {
+  color:#5EA8A7;
+  background-color:#f2f2f2;
+}
+
+/*luukku 3 kuvat*/
+.luukku3kuvat {
+  height: 375px; 
+  width: 550px;
+}
 
 #embed-ded-map-canvas {
   position: relative;
