@@ -143,4 +143,10 @@ position: relative;
 top: 50px;
 }
 
+/*Pasin Luukku 8 kuvan vaihto, älä koske :D*/
+.hidden {
+  display: none;
+}
+
+
 
