@@ -148,5 +148,16 @@ top: 50px;
   display: none;
 }
 
-
-
+/* luukku 13 juttuja */
+.trailer {
+  position: relative
+}
+.geass {
+  position: relative;
+  left: 600px;
+  bottom: 545px;
+}
+.luukku13teksti {
+  position: relative;
+  bottom: 910px;
+}
