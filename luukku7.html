@@ -1,25 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="noindex, nofollow">
     <title>TIKO-kalenteri</title>
     <meta charset="UTF-8">
-    <meta name="robots" content="noindex, nofollow">
     <meta name="googlebot" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tyyli.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            position: relative;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Set z-index to -1 to ensure particles stay behind other elements */
+        }
+
+        h2 {
+            color: #fff;
+            text-shadow: 0 0 10px #fff;
+        }
+    </style>
 </head>
 <body class="luukut">
 
-    <header>
-        <h1>7. Kesälomaviikko</h1>
-        <a href="index.html" class="toimintakehote"><b>Takaisin kalenteriin</b></a>
-    </header>
+<header>
+    <h1>7. Kesälomaviikko</h1>
+    <a href="index.html" class="toimintakehote"><b>Takaisin kalenteriin</b></a>
+</header>
 
-    <h2>Mene viettämään päivää vesipuisto Laguuniin</h2>
-    <div id="imageLaguuni">
-        <img src="Kuvat/laguuni.jpg" height="375" width="450">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.73333452266!2d24.989491576716865!3d60.182939142403704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692095d7b8a1e4d%3A0x15503372538a784c!2sVesipuisto%20Laguuni!5e0!3m2!1sfi!2sfi!4v1714118559977!5m2!1sfi!2sfi" width="450" height="375" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+<h2>Mene viettämään päivää vesipuisto Laguuniin</h2>
+<div id="imageLaguuni">
+    <img src="Kuvat/laguuni.jpg" height="375" width="450" id="laguuniImg">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.73333452266!2d24.989491576716865!3d60.182939142403704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692095d7b8a1e4d%3A0x15503372538a784c!2sVesipuisto%20Laguuni!5e0!3m2!1sfi!2sfi!4v1714118559977!5m2!1sfi!2sfi" width="450" height="375" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<!-- Particle animation container, courtesy of chatGPT :D -->
+<div id="particles-js"></div>
+
+<!-- JS particle animaatio, courtesy of chatGPT -->
+<script>
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 100,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#ffffff"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                },
+                "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                }
+            },
+            "opacity": {
+                "value": 0.5,
+                "random": false,
+                "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 40,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 6,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                        "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
+        },
+        "retina_detect": true
+    });
+</script>
 </body>
 </html>

@@ -161,3 +161,34 @@ top: 50px;
   position: relative;
   bottom: 910px;
 }
+
+
+/*Pasin luukkujen animointei*/
+#imageLaguuni img {
+  animation: moveUpDownImg 3s ease-in-out infinite alternate;
+}
+
+#imageLaguuni iframe {
+  animation: moveUpDownIframe 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveUpDownImg {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(25px);
+  }
+}
+
+@keyframes moveUpDownIframe {
+  0% {
+      transform: translateY(25px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+
+
